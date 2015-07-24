@@ -56,7 +56,7 @@ class BaseTransliteratorHelper
 
 		preg_match_all('/[\x00-\x7f]+|[\x80-\xff][\x00-\x40\x5b-\x5f\x7b-\xff]*/', $string, $matches);
 
-		$result = [];
+		$result = array();
 		foreach ($matches[0] as $str) {
 			if ($str[0] < "\x80") {
 				$result[] = $str;
