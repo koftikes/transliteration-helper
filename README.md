@@ -1,23 +1,23 @@
-TransliteratorHelper for Yii 1
-==============================
+Transliterator Helper for Yii 1.1.*
+===============================
 
-TransliteratorHelper transliterates UTF-8 encoded text to US-ASCII
+Transliterator Helper transliterates UTF-8 encoded text to US-ASCII
+
+Adapted for PHP 5.3 by koftikes.
 
 Installation
 ------------
 The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
 
-> If you are looking for Yii 2.* version please check [its own repository](https://github.com/2amigos/yii2-transliterator-helper)
-
 Either run
 
 ```
-php composer.phar require 2amigos/transliterator-helper "1.0.*"
+composer require sbs/transliterator-helper
 ```
 or add
 
 ```json
-"2amigos/transliterator-helper": "1.0.*"
+"sbs/transliterator-helper": "^1.0"
 ```
 
 to the require section of your application's `composer.json` file.
@@ -32,9 +32,3 @@ use dosamigos\yii\helpers\TransliteratorHelper;
 // will echo AAAAAAAECEEEEIIIIDNOOOOOUUUUYssaaaaaaaeceeeeiiiidnooooouuuuyy
 TransliteratorHelper::process('ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖÙÚÛÜÝßàáâãäåæçèéêëìíîïðñòóôõöùúûüýÿ', '', 'en'));
 ```
-
-
-> [![2amigOS!](http://www.gravatar.com/avatar/55363394d72945ff7ed312556ec041e0.png)](http://www.2amigos.us)    
-<i>web development has never been so fun</i>   
-[www.2amigos.us](http://www.2amigos.us)
-

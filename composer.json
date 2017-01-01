@@ -1,8 +1,8 @@
 {
-    "name": "2amigos/transliterator-helper",
+    "name": "sbs/transliterator-helper",
     "description": "Transliterator Helper for Yii 1.*.",
     "keywords": ["helper", "yii"],
-    "version": "0.0.1",
+    "version": "0.0.3",
     "type": "yii-extension",
     "license": "BSD-3-Clause",
     "authors": [
@@ -10,8 +10,17 @@
             "name": "Antonio Ramirez",
             "email": "ramirez.cobos@gmail.com",
             "homepage": "http://2amigos.us"
+        },
+        {
+            "name": "Konstantin Litvinov",
+            "email": "koftikes@gmail.com",
+            "homepage": "http://sbsweb.ru"
         }
     ],
+    "require": {
+        "php": ">= 5.3.0",
+        "yiisoft/yii": "1.1.*"
+    },
     "autoload": {
         "psr-0": { "dosamigos\\yii\\helpers\\": "src/" }
     }
